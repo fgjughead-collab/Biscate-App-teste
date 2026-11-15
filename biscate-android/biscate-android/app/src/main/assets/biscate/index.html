@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-AO"><head><meta charset="utf-8">
+<title>Biscate — Encontre quem resolve</title>
+<meta name="description" content="O Biscate junta quem precisa de um serviço com quem o faz, no seu bairro. Pedreiros, electricistas, canalizadores, costureiras e muito mais em Luanda.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<style>
+/* 1. Cores e medidas: mude aqui para mudar o site todo */
+:root{--red:#C8102E;--ink:#111;--gold:#F7B500;--fl:#F3F3F3;--mu:#5E5E5E;--ln:#E8E8E8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.55 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:#fff}
+a{color:inherit}.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+/* 2. Cabeçalho */
+header{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--ln)}
+header .wrap{display:flex;align-items:center;gap:24px;height:68px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:24px;letter-spacing:-.045em}
+nav{margin-left:auto;display:flex;gap:22px;font-weight:500;font-size:15px}nav a{text-decoration:none;color:var(--mu)}nav a:hover{color:var(--ink)}
+.btn{display:inline-block;padding:14px 24px;border-radius:14px;background:var(--ink);color:#fff;font-weight:700;text-decoration:none}.btn.w{background:#fff;color:var(--ink)}.btn.o{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px #fff}
+/* 3. Início (hero) com padrão africano */
+.hero{background-color:var(--red);color:#fff;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3E%3Cg fill='none' stroke='%23fff' stroke-opacity='.15' stroke-width='2'%3E%3Cpath d='M24 3l21 21-21 21L3 24z'/%3E%3Cpath d='M24 15l9 9-9 9-9-9z'/%3E%3C/g%3E%3C/svg%3E");background-size:48px 48px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:end;padding-top:64px}
+.hero h1{font-size:clamp(38px,6vw,68px);line-height:1.02;letter-spacing:-.04em;margin:0 0 18px;font-weight:800}
+.hero p{font-size:19px;max-width:520px;margin:0 0 28px;opacity:.95}.hero .acts{display:flex;gap:12px;flex-wrap:wrap;padding-bottom:64px}
+.hero svg{width:100%;height:auto;display:block}
+.band{height:14px;background:linear-gradient(90deg,#111 50%,var(--gold) 50%)}
+/* 4. Secções */
+section{padding:76px 0}section.g{background:var(--fl)}
+h2{font-size:clamp(28px,4vw,40px);letter-spacing:-.035em;line-height:1.1;margin:0 0 12px;font-weight:800}
+.lead{color:var(--mu);font-size:18px;max-width:640px;margin:0 0 36px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:#fff;border-radius:20px;padding:26px}section.g .card{background:#fff}section:not(.g) .card{background:var(--fl)}
+.card h3{margin:0 0 8px;font-size:20px;letter-spacing:-.02em}.card p{margin:0;color:var(--mu)}
+.n{display:inline-grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--red);color:#fff;font-weight:800;margin-bottom:14px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.two .card ul{margin:12px 0 0;padding-left:20px;color:var(--mu)}.two .card li{margin:6px 0}
+.plan{display:flex;flex-direction:column;gap:4px}.plan b{font-size:30px;letter-spacing:-.03em}.plan.hl{background:var(--ink)!important;color:#fff}.plan.hl p{color:#ccc}
+.tag{align-self:flex-start;background:var(--gold);color:#111;font-size:12px;font-weight:700;padding:3px 10px;border-radius:99px}
+details{border-bottom:1px solid var(--ln);padding:18px 0}summary{font-weight:600;cursor:pointer;font-size:17px}details p{color:var(--mu);margin:10px 0 0}
+.cta{background:var(--ink);color:#fff;text-align:center}.cta p{color:#bbb;margin:0 auto 26px;max-width:520px}
+footer{padding:28px 0;font-size:14px;color:var(--mu)}footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
+@media(max-width:820px){.hero .wrap,.two{grid-template-columns:1fr}.hero .acts{padding-bottom:30px}nav{display:none}header .btn{margin-left:auto;padding:10px 16px}}
+</style></head>
+<body>
+<header><div class="wrap"><a class="logo" href="#"><svg width="38" height="38" viewBox="0 0 48 48" role="img" aria-label="Logo Biscate"><rect width="48" height="48" rx="12" fill="#C8102E"/><path d="M16 12v24M16 12h9a6 6 0 0 1 0 12h-9M16 24h10a6 6 0 0 1 0 12H16" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M37 6l4 4-4 4-4-4z" fill="#F7B500"/></svg>biscate</a>
+<nav><a href="#problema">O problema</a><a href="#como">Como funciona</a><a href="#profissionais">Profissionais</a><a href="#planos">Planos</a><a href="#faq">Perguntas</a></nav>
+<a class="btn" href="app/index.html">Experimentar a app</a></div></header>
+
+<main>
+<div class="hero"><div class="wrap"><div><h1>Encontre quem resolve. Ou seja quem resolve.</h1>
+<p>O Biscate junta quem precisa de um serviço com quem o faz, no seu bairro. Grátis para clientes. Simples para profissionais.</p>
+<div class="acts"><a class="btn w" href="app/index.html">Experimentar a app</a><a class="btn o" href="#profissionais">Sou profissional</a></div></div>
+<div><svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMax meet" role="img" aria-label="Profissionais angolanos a trabalhar"><circle cx="318" cy="96" r="50" fill="#F7B500"/><g fill="#8A1020" stroke="#8A1020"><path stroke="none" d="M182 300c4-64-2-104-10-132h56c-8 28-4 68 0 132z"/><path d="M200 170l-52-46M200 170v-70M200 170l54-46" stroke-width="9" stroke-linecap="round" fill="none"/><circle stroke="none" cx="144" cy="118" r="24"/><circle stroke="none" cx="200" cy="92" r="28"/><circle stroke="none" cx="258" cy="118" r="24"/></g><g transform="translate(14 178) scale(.8)"><path d="M14 150v-34a26 26 0 0 1 26-26h40a26 26 0 0 1 26 26v34z" fill="#2F5D8A"/><rect x="51" y="72" width="18" height="22" rx="8" fill="#6B4226"/><circle cx="36" cy="57" r="4.5" fill="#6B4226"/><circle cx="84" cy="57" r="4.5" fill="#6B4226"/><circle cx="60" cy="54" r="24" fill="#6B4226"/><path d="M33 48a27 25 0 0 1 54 0z" fill="#F7B500"/><rect x="29" y="46" width="62" height="8" rx="4" fill="#E39F00"/><circle cx="51" cy="58" r="2.3" fill="#1a1a1a"/><circle cx="69" cy="58" r="2.3" fill="#1a1a1a"/><path d="M52 67q8 6 16 0" stroke="#1a1a1a" stroke-width="2.4" fill="none" stroke-linecap="round"/><rect x="90" y="86" width="7" height="26" rx="3" fill="#5b3a1e" transform="rotate(18 94 100)"/><path d="M99 66l14 24-20-4z" fill="#C9D1D9"/><circle cx="94" cy="116" r="7" fill="#6B4226"/></g><g transform="translate(108 178) scale(.8)"><path d="M14 150v-34a26 26 0 0 1 26-26h40a26 26 0 0 1 26 26v34z" fill="#7A2A3C"/><rect x="51" y="72" width="18" height="22" rx="8" fill="#845636"/><circle cx="36" cy="57" r="4.5" fill="#845636"/><circle cx="84" cy="57" r="4.5" fill="#845636"/><circle cx="60" cy="54" r="24" fill="#845636"/><path d="M34 50c-2-20 11-28 26-28s28 8 26 28c-9-6-17-8-26-8s-17 2-26 8z" fill="#F7B500"/><circle cx="60" cy="22" r="10" fill="#F7B500"/><path d="M44 41l5 5 5-5-5-5zM66 41l5 5 5-5-5-5z" fill="#C8102E"/><circle cx="51" cy="58" r="2.3" fill="#1a1a1a"/><circle cx="69" cy="58" r="2.3" fill="#1a1a1a"/><path d="M52 67q8 6 16 0" stroke="#1a1a1a" stroke-width="2.4" fill="none" stroke-linecap="round"/><path d="M42 88l18 26 18-26" stroke="#F7B500" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M96 94l-9 24M86 94l9 24" stroke="#D9D9D9" stroke-width="3.5" stroke-linecap="round"/></g><g transform="translate(202 178) scale(.8)"><path d="M14 150v-34a26 26 0 0 1 26-26h40a26 26 0 0 1 26 26v34z" fill="#1E5F4B"/><rect x="51" y="72" width="18" height="22" rx="8" fill="#7A4B2E"/><circle cx="36" cy="57" r="4.5" fill="#7A4B2E"/><circle cx="84" cy="57" r="4.5" fill="#7A4B2E"/><circle cx="60" cy="54" r="24" fill="#7A4B2E"/><path d="M33 48a27 25 0 0 1 54 0z" fill="#F7B500"/><rect x="29" y="46" width="62" height="8" rx="4" fill="#E39F00"/><circle cx="51" cy="58" r="2.3" fill="#1a1a1a"/><circle cx="69" cy="58" r="2.3" fill="#1a1a1a"/><path d="M52 67q8 6 16 0" stroke="#1a1a1a" stroke-width="2.4" fill="none" stroke-linecap="round"/><path d="M98 82l-15 24h11l-4 20 20-28H98z" fill="#F7B500"/></g><g transform="translate(296 178) scale(.8)"><path d="M14 150v-34a26 26 0 0 1 26-26h40a26 26 0 0 1 26 26v34z" fill="#1F4E79"/><rect x="51" y="72" width="18" height="22" rx="8" fill="#6B4226"/><circle cx="36" cy="57" r="4.5" fill="#6B4226"/><circle cx="84" cy="57" r="4.5" fill="#6B4226"/><circle cx="60" cy="54" r="24" fill="#6B4226"/><path d="M35 52c-2-20 10-28 25-28s27 8 25 28c-8-8-16-10-25-10s-17 2-25 10z" fill="#1d1410"/><circle cx="60" cy="22" r="10" fill="#1d1410"/><circle cx="51" cy="58" r="2.3" fill="#1a1a1a"/><circle cx="69" cy="58" r="2.3" fill="#1a1a1a"/><path d="M52 67q8 6 16 0" stroke="#1a1a1a" stroke-width="2.4" fill="none" stroke-linecap="round"/><g transform="rotate(10 98 100)"><rect x="95" y="60" width="5" height="72" rx="2.5" fill="#8A5A2B"/><path d="M88 128h19l6 22H82z" fill="#E0B24A"/></g><circle cx="94" cy="116" r="7" fill="#6B4226"/></g></svg></div></div></div><div class="band"></div>
+
+<section id="problema"><div class="wrap"><h2>Quem precisa e quem faz não se encontram</h2>
+<p class="lead">Em Luanda há muito talento a trabalhar sem ser visto, e muita gente a procurar alguém de confiança sem saber a quem ligar.</p>
+<div class="cards">
+<div class="card"><h3>Difícil de encontrar</h3><p>Hoje depende do “conhecido de um conhecido” ou de grupos de WhatsApp cheios de mensagens.</p></div>
+<div class="card"><h3>Difícil de confiar</h3><p>Sem avaliações nem verificação, cada contratação é um risco para o cliente.</p></div>
+<div class="card"><h3>Difícil de crescer</h3><p>O profissional só trabalha quando alguém passa por acaso e não tem montra para mostrar o que sabe fazer.</p></div>
+</div></div></section>
+
+<section id="como" class="g"><div class="wrap"><h2>Como funciona</h2><p class="lead">Três passos, no telemóvel e sem complicações.</p>
+<div class="cards">
+<div class="card"><span class="n">1</span><h3>Procure</h3><p>Escolha o serviço e o bairro. Veja perfis com nota, fotos de trabalhos e selo Verificado.</p></div>
+<div class="card"><span class="n">2</span><h3>Converse</h3><p>Fale pelo chat, ligue ou peça um orçamento. Sem compromisso.</p></div>
+<div class="card"><span class="n">3</span><h3>Avalie</h3><p>Depois do serviço, deixe a sua nota. Assim todos sabem em quem confiar.</p></div>
+</div></div></section>
+
+<section id="profissionais"><div class="wrap"><h2>Para clientes e para profissionais</h2><p class="lead">Cada lado tem o que precisa.</p>
+<div class="two">
+<div class="card"><h3>Sou cliente</h3><p>Sempre grátis.</p><ul><li>Pesquisa por serviço, bairro e preço</li><li>Chat e pedido de orçamento</li><li>Avaliações reais e selo Verificado</li><li>Publique um pedido e receba propostas</li></ul></div>
+<div class="card"><h3>Sou profissional</h3><p>Pague um plano e apareça nas pesquisas.</p><ul><li>Perfil com fotos dos seus trabalhos</li><li>Clientes perto de si, sem intermediários</li><li>Painel com visitas e contactos</li><li>Pagamento por referência ou Multicaixa Express</li></ul></div>
+</div></div></section>
+
+<section id="planos" class="g"><div class="wrap"><h2>Planos para profissionais</h2><p class="lead">Escolha o período que lhe convém. Valores de exemplo, a definir antes do lançamento.</p>
+<div class="cards">
+<div class="card plan"><p>Para experimentar</p><h3>3 dias</h3><b>500 Kz</b></div>
+<div class="card plan"><p>Uma semana de trabalho</p><h3>1 semana</h3><b>1.000 Kz</b></div>
+<div class="card plan hl"><span class="tag">Mais escolhido</span><h3>1 mês</h3><b>3.000 Kz</b><p>Perfil visível durante 30 dias</p></div>
+<div class="card plan"><p>Poupa 6.000 Kz</p><h3>1 ano</h3><b>30.000 Kz</b></div>
+</div></div></section>
+
+<section id="faq"><div class="wrap"><h2>Perguntas frequentes</h2><p class="lead">As dúvidas mais comuns.</p>
+<details><summary>É grátis para clientes?</summary><p>Sim. Só os profissionais pagam um plano para aparecer nas pesquisas.</p></details>
+<details><summary>O que significa o selo Verificado?</summary><p>A nossa equipa confirma o BI e o telefone do profissional antes de dar o selo.</p></details>
+<details><summary>Como se paga ao profissional?</summary><p>Combinam entre si, em dinheiro ou transferência. O pagamento protegido está previsto para uma fase futura.</p></details>
+<details><summary>Como paga o profissional o plano?</summary><p>Por referência (ATM, internet banking ou Multicaixa Express). O plano activa quando o pagamento é confirmado.</p></details>
+<details><summary>Em que zonas funciona?</summary><p>Começamos em Luanda (Maianga, Talatona, Viana, Cazenga, Kilamba e Rangel) e vamos crescer para outras províncias.</p></details>
+</div></section>
+
+<section class="cta"><div class="wrap"><h2>Pronto para experimentar?</h2><p>Abra a app de demonstração no seu telemóvel e veja como funciona.</p>
+<a class="btn w" href="app/index.html">Abrir a app</a></div></section>
+</main>
+<footer><div class="wrap"><span>© 2026 Biscate · Luanda, Angola</span><span>Contacto: <a href="mailto:ola@biscate.example">ola@biscate.example</a> (troque pelo seu e-mail)</span></div></footer>
+</body></html>

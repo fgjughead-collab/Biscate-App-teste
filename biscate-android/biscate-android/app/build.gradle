@@ -1,0 +1,28 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'ao.biscate.app'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'ao.biscate.app'
+        minSdk 23          // Android 6.0
+        targetSdk 35       // Android 15
+        versionCode 1
+        versionName '0.1-teste'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            // assinado com a chave debug só para teste/instalação directa
+            signingConfig signingConfigs.debug
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
